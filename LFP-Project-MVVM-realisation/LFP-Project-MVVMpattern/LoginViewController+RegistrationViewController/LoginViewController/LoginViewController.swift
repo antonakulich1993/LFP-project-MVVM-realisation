@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
     let passwordField: LightBlueTextField = {
         let passwordField = LightBlueTextField()
         passwordField.attributedPlaceholder = NSAttributedString(string: "Пароль",
-                                                            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+                                                                 attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         passwordField.backgroundColor = UIColor(red: 0.97, green: 0.98, blue: 1.0, alpha: 1.0)
         passwordField.isSecureTextEntry = true
         return passwordField
@@ -70,9 +70,9 @@ class LoginViewController: UIViewController {
     }
     
     @objc func didTap() {
-        let viewModel = LoginViewModel()
         guard let username = usernameField.text, let password = passwordField.text else { return }
-        viewModel.didLogin(username: username , password: password)
+        let viewModel = LoginViewModel()
+        viewModel.didLogin(username: username, password: password)
     }
 }
 
@@ -127,5 +127,15 @@ extension LoginViewController {
             make.leading.trailing.equalToSuperview().inset(16)
             make.height.equalTo(54)
         }
+    }
+    
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

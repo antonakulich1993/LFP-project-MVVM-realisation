@@ -18,6 +18,8 @@
 		FAA4E247279EF2B400BC0196 /* LightBlueTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4E246279EF2B400BC0196 /* LightBlueTextField.swift */; };
 		FAA4E24C279EF9AC00BC0196 /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4E24B279EF9AC00BC0196 /* TokenModel.swift */; };
 		FAA4E24F279EFA6700BC0196 /* DeafaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4E24E279EFA6700BC0196 /* DeafaultsManager.swift */; };
+		FAA4E251279F1AE400BC0196 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4E250279F1AE400BC0196 /* RegistrationViewModel.swift */; };
+		FAA4E253279F1DA800BC0196 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4E252279F1DA800BC0196 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		FAA4E246279EF2B400BC0196 /* LightBlueTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightBlueTextField.swift; sourceTree = "<group>"; };
 		FAA4E24B279EF9AC00BC0196 /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 		FAA4E24E279EFA6700BC0196 /* DeafaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeafaultsManager.swift; sourceTree = "<group>"; };
+		FAA4E250279F1AE400BC0196 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		FAA4E252279F1DA800BC0196 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 				FAA4E243279EF28E00BC0196 /* CastomUIObjects */,
 				FA028924279AAAF800F6489F /* AppDelegate.swift */,
 				FAA4E24D279EFA3D00BC0196 /* DefaultsManager */,
+				FAA4E254279F1DB300BC0196 /* NetworkManager */,
 				FAA4E24A279EF99E00BC0196 /* NetworkModels */,
 				FA02892D279AAAFA00F6489F /* Assets.xcassets */,
 				FA02892F279AAAFA00F6489F /* LaunchScreen.storyboard */,
@@ -122,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA4E23D279EE55200BC0196 /* RegistrationViewController.swift */,
+				FAA4E250279F1AE400BC0196 /* RegistrationViewModel.swift */,
 			);
 			path = RegistrationViewController;
 			sourceTree = "<group>";
@@ -149,6 +155,14 @@
 				FAA4E24E279EFA6700BC0196 /* DeafaultsManager.swift */,
 			);
 			path = DefaultsManager;
+			sourceTree = "<group>";
+		};
+		FAA4E254279F1DB300BC0196 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				FAA4E252279F1DA800BC0196 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +280,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAA4E245279EF2AA00BC0196 /* DarkBlueButton.swift in Sources */,
+				FAA4E251279F1AE400BC0196 /* RegistrationViewModel.swift in Sources */,
+				FAA4E253279F1DA800BC0196 /* NetworkManager.swift in Sources */,
 				FAA4E23E279EE55200BC0196 /* RegistrationViewController.swift in Sources */,
 				FAA4E24C279EF9AC00BC0196 /* TokenModel.swift in Sources */,
 				FAA4E23A279EE52B00BC0196 /* LoginViewController.swift in Sources */,
