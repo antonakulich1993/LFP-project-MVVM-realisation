@@ -66,6 +66,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         configureIntreface()
         loginButton.addTarget(self, action: #selector(didTap), for: .touchUpInside)
+        registrationButton.addTarget(self, action: #selector(nextScreen), for: .touchUpInside)
         
     }
     
@@ -73,6 +74,12 @@ class LoginViewController: UIViewController {
         guard let username = usernameField.text, let password = passwordField.text else { return }
         let viewModel = LoginViewModel()
         viewModel.didLogin(username: username, password: password)
+     
+    }
+    
+    @objc func nextScreen() {
+        let regVC = RegistrationViewController()
+        navigationController?.pushViewController(regVC, animated: true)
     }
 }
 

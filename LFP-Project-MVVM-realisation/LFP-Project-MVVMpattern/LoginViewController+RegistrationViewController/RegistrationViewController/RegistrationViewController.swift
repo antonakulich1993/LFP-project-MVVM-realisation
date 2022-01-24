@@ -76,6 +76,7 @@ class RegistrationViewController: UIViewController {
 
 extension RegistrationViewController {
     func configureInterface() {
+        view.backgroundColor = .white
         view.addSubview(registrationLabel)
         registrationLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(147)
