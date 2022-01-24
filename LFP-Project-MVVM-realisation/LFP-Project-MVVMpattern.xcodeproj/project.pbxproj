@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DABC64FFC85B2701A5D39F2 /* Pods_LFP_Project_MVVMpattern.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BB24AED4506A1FB166F9B2 /* Pods_LFP_Project_MVVMpattern.framework */; };
 		FA028925279AAAF800F6489F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA028924279AAAF800F6489F /* AppDelegate.swift */; };
 		FA02892E279AAAFA00F6489F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA02892D279AAAFA00F6489F /* Assets.xcassets */; };
 		FA028931279AAAFA00F6489F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA02892F279AAAFA00F6489F /* LaunchScreen.storyboard */; };
 		FAA4E23A279EE52B00BC0196 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4E239279EE52B00BC0196 /* LoginViewController.swift */; };
 		FAA4E23E279EE55200BC0196 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4E23D279EE55200BC0196 /* RegistrationViewController.swift */; };
+		FAA4E240279EE65F00BC0196 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4E23F279EE65F00BC0196 /* LoginViewModel.swift */; };
+		FAA4E245279EF2AA00BC0196 /* DarkBlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4E244279EF2AA00BC0196 /* DarkBlueButton.swift */; };
+		FAA4E247279EF2B400BC0196 /* LightBlueTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4E246279EF2B400BC0196 /* LightBlueTextField.swift */; };
+		FAA4E24C279EF9AC00BC0196 /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4E24B279EF9AC00BC0196 /* TokenModel.swift */; };
+		FAA4E24F279EFA6700BC0196 /* DeafaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4E24E279EFA6700BC0196 /* DeafaultsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A6735B5E0084B6A44DACD31 /* Pods-LFP-Project-MVVMpattern.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFP-Project-MVVMpattern.debug.xcconfig"; path = "Target Support Files/Pods-LFP-Project-MVVMpattern/Pods-LFP-Project-MVVMpattern.debug.xcconfig"; sourceTree = "<group>"; };
+		9F6AA93C8776DAE53F45DBCD /* Pods-LFP-Project-MVVMpattern.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFP-Project-MVVMpattern.release.xcconfig"; path = "Target Support Files/Pods-LFP-Project-MVVMpattern/Pods-LFP-Project-MVVMpattern.release.xcconfig"; sourceTree = "<group>"; };
+		F9BB24AED4506A1FB166F9B2 /* Pods_LFP_Project_MVVMpattern.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LFP_Project_MVVMpattern.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA028921279AAAF800F6489F /* LFP-Project-MVVMpattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LFP-Project-MVVMpattern.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA028924279AAAF800F6489F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA02892D279AAAFA00F6489F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -22,6 +31,11 @@
 		FA028932279AAAFA00F6489F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAA4E239279EE52B00BC0196 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FAA4E23D279EE55200BC0196 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		FAA4E23F279EE65F00BC0196 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FAA4E244279EF2AA00BC0196 /* DarkBlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkBlueButton.swift; sourceTree = "<group>"; };
+		FAA4E246279EF2B400BC0196 /* LightBlueTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightBlueTextField.swift; sourceTree = "<group>"; };
+		FAA4E24B279EF9AC00BC0196 /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
+		FAA4E24E279EFA6700BC0196 /* DeafaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeafaultsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DABC64FFC85B2701A5D39F2 /* Pods_LFP_Project_MVVMpattern.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18F153A99FFAC6088A133F3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9BB24AED4506A1FB166F9B2 /* Pods_LFP_Project_MVVMpattern.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F61324DD9C97C48B80B77415 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A6735B5E0084B6A44DACD31 /* Pods-LFP-Project-MVVMpattern.debug.xcconfig */,
+				9F6AA93C8776DAE53F45DBCD /* Pods-LFP-Project-MVVMpattern.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FA028918279AAAF800F6489F = {
 			isa = PBXGroup;
 			children = (
 				FA028923279AAAF800F6489F /* LFP-Project-MVVMpattern */,
 				FA028922279AAAF800F6489F /* Products */,
+				F61324DD9C97C48B80B77415 /* Pods */,
+				18F153A99FFAC6088A133F3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				FAA4E238279EE50B00BC0196 /* LoginViewController+RegistrationViewController */,
+				FAA4E243279EF28E00BC0196 /* CastomUIObjects */,
 				FA028924279AAAF800F6489F /* AppDelegate.swift */,
+				FAA4E24D279EFA3D00BC0196 /* DefaultsManager */,
+				FAA4E24A279EF99E00BC0196 /* NetworkModels */,
 				FA02892D279AAAFA00F6489F /* Assets.xcassets */,
 				FA02892F279AAAFA00F6489F /* LaunchScreen.storyboard */,
 				FA028932279AAAFA00F6489F /* Info.plist */,
@@ -66,8 +103,8 @@
 		FAA4E238279EE50B00BC0196 /* LoginViewController+RegistrationViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FAA4E23C279EE53C00BC0196 /* RegistrationViewController */,
 				FAA4E23B279EE53200BC0196 /* LoginViewController */,
+				FAA4E23C279EE53C00BC0196 /* RegistrationViewController */,
 			);
 			path = "LoginViewController+RegistrationViewController";
 			sourceTree = "<group>";
@@ -76,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA4E239279EE52B00BC0196 /* LoginViewController.swift */,
+				FAA4E23F279EE65F00BC0196 /* LoginViewModel.swift */,
 			);
 			path = LoginViewController;
 			sourceTree = "<group>";
@@ -88,6 +126,31 @@
 			path = RegistrationViewController;
 			sourceTree = "<group>";
 		};
+		FAA4E243279EF28E00BC0196 /* CastomUIObjects */ = {
+			isa = PBXGroup;
+			children = (
+				FAA4E244279EF2AA00BC0196 /* DarkBlueButton.swift */,
+				FAA4E246279EF2B400BC0196 /* LightBlueTextField.swift */,
+			);
+			path = CastomUIObjects;
+			sourceTree = "<group>";
+		};
+		FAA4E24A279EF99E00BC0196 /* NetworkModels */ = {
+			isa = PBXGroup;
+			children = (
+				FAA4E24B279EF9AC00BC0196 /* TokenModel.swift */,
+			);
+			path = NetworkModels;
+			sourceTree = "<group>";
+		};
+		FAA4E24D279EFA3D00BC0196 /* DefaultsManager */ = {
+			isa = PBXGroup;
+			children = (
+				FAA4E24E279EFA6700BC0196 /* DeafaultsManager.swift */,
+			);
+			path = DefaultsManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA028935279AAAFA00F6489F /* Build configuration list for PBXNativeTarget "LFP-Project-MVVMpattern" */;
 			buildPhases = (
+				F3085CF5373A757EE997BD56 /* [CP] Check Pods Manifest.lock */,
 				FA02891D279AAAF800F6489F /* Sources */,
 				FA02891E279AAAF800F6489F /* Frameworks */,
 				FA02891F279AAAF800F6489F /* Resources */,
+				653273F1FEEC56FE3B6BC286 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,13 +218,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		653273F1FEEC56FE3B6BC286 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LFP-Project-MVVMpattern/Pods-LFP-Project-MVVMpattern-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LFP-Project-MVVMpattern/Pods-LFP-Project-MVVMpattern-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LFP-Project-MVVMpattern/Pods-LFP-Project-MVVMpattern-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3085CF5373A757EE997BD56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LFP-Project-MVVMpattern-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA02891D279AAAF800F6489F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA4E245279EF2AA00BC0196 /* DarkBlueButton.swift in Sources */,
 				FAA4E23E279EE55200BC0196 /* RegistrationViewController.swift in Sources */,
+				FAA4E24C279EF9AC00BC0196 /* TokenModel.swift in Sources */,
 				FAA4E23A279EE52B00BC0196 /* LoginViewController.swift in Sources */,
+				FAA4E240279EE65F00BC0196 /* LoginViewModel.swift in Sources */,
+				FAA4E24F279EFA6700BC0196 /* DeafaultsManager.swift in Sources */,
+				FAA4E247279EF2B400BC0196 /* LightBlueTextField.swift in Sources */,
 				FA028925279AAAF800F6489F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +408,7 @@
 		};
 		FA028936279AAAFA00F6489F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A6735B5E0084B6A44DACD31 /* Pods-LFP-Project-MVVMpattern.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +436,7 @@
 		};
 		FA028937279AAAFA00F6489F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F6AA93C8776DAE53F45DBCD /* Pods-LFP-Project-MVVMpattern.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
