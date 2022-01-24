@@ -64,6 +64,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let viewModel = LoginViewModel()
+        usernameField.text = viewModel.username
+        passwordField.text = viewModel.password
         configureIntreface()
         
     }

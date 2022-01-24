@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ViewModel {
+class LoginViewModel {
     
     var username: String?
     var password: String?
