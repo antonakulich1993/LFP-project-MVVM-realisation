@@ -64,14 +64,17 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let viewModel = LoginViewModel()
-        usernameField.text = viewModel.username
-        passwordField.text = viewModel.password
         configureIntreface()
+        loginButton.addTarget(self, action: #selector(didTap), for: .touchUpInside)
         
     }
+    
+    @objc func didTap() {
+        let viewModel = LoginViewModel()
+        guard let username = usernameField.text, let password = passwordField.text else { return }
+        viewModel.didLogin(username: username , password: password)
+    }
 }
-
 
 extension LoginViewController {
     func configureIntreface() {

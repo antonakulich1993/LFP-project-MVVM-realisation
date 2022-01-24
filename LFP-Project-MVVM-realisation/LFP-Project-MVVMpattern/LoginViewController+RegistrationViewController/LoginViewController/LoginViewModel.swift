@@ -13,10 +13,9 @@ class LoginViewModel {
     var password: String?
     
     func didLogin(username: String, password: String) {
+         let username = username
+         let password = password
         
-        guard let username = self.username, let password = self.password else {
-            return
-        }
         let parameters = [
             "username": "\(username)",
             "password": "\(password)"
