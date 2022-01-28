@@ -10,6 +10,17 @@ import SnapKit
 
 class LoginViewController: UIViewController {
     
+    private let loginViewModel: LoginViewModel
+    init(loginViewModel: LoginViewModel) {
+        self.loginViewModel = loginViewModel
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     let logoImage: UIImageView = {
         let logoImage = UIImageView()
         logoImage.image = UIImage(named: "lfpLogo")
@@ -72,9 +83,8 @@ class LoginViewController: UIViewController {
     
     @objc func didTap() {
         guard let username = usernameField.text, let password = passwordField.text else { return }
-        let viewModel = LoginViewModel()
-        viewModel.didLogin(username: username, password: password)
-     
+        loginViewModel.username = username
+        loginViewModel.password = password
     }
     
     @objc func nextScreen() {

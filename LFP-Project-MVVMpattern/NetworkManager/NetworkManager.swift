@@ -8,11 +8,7 @@
 import Foundation
 
 class NetworkManager {
-    
     func didLogin(username: String, password: String) {
-        let username = username
-        let password = password
-        
         let parameters = [
             "username": "\(username)",
             "password": "\(password)"
@@ -46,7 +42,6 @@ class NetworkManager {
     func didRegistr(username: String, password: String) {
         let username = username
         let password = password
-        
         let parameters = [
             "username": "\(username)",
             "password": "\(password)"
