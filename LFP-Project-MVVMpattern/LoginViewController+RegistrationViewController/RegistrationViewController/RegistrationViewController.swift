@@ -9,7 +9,17 @@ import UIKit
 import SnapKit
 
 class RegistrationViewController: UIViewController {
-
+    
+    private let registrationViewModel: RegistrationViewModel
+    
+    init(registrationViewModel: RegistrationViewModel) {
+        self.registrationViewModel = registrationViewModel
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     let registrationLabel: UILabel = {
         let registrationLabel = UILabel()
         registrationLabel.text = "Регистрация"
@@ -68,9 +78,8 @@ class RegistrationViewController: UIViewController {
     }
     
     @objc func didTap() {
-        let registrationViewModel = RegistrationViewModel()
         guard let username = usernameField.text, let password = passwordField.text else { return }
-        registrationViewModel.didRegistr(username: username, password: password)
+        registrationViewModel.didRegistration(username: username, password: password)
     }
 }
 

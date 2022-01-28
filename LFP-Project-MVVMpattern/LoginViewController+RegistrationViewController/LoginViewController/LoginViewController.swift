@@ -83,8 +83,7 @@ class LoginViewController: UIViewController {
     
     @objc func didTap() {
         guard let username = usernameField.text, let password = passwordField.text else { return }
-        loginViewModel.username = username
-        loginViewModel.password = password
+        loginViewModel.didLogin(username: username, password: password)
     }
     
     @objc func nextScreen() {

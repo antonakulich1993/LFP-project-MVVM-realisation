@@ -8,8 +8,13 @@
 import Foundation
 
 class RegistrationViewModel {
-    func didRegistr(username: String, password: String) {
-        let networkManager = NetworkManager()
+    
+    private let networkManager: NetworkManager
+    
+    init(networkManeger: NetworkManager) {
+        self.networkManager = networkManeger
+    }
+    func didRegistration(username: String, password: String) {
         networkManager.didRegistr(username: username, password: password)
     }
 }
