@@ -14,6 +14,8 @@ class RegistrationViewController: UIViewController {
     
     init(registrationViewModel: RegistrationViewModel) {
         self.registrationViewModel = registrationViewModel
+        
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {

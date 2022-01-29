@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 class LoginViewController: UIViewController {
-    
+  
     private let loginViewModel: LoginViewModel
     init(loginViewModel: LoginViewModel) {
         self.loginViewModel = loginViewModel
@@ -87,7 +87,9 @@ class LoginViewController: UIViewController {
     }
     
     @objc func nextScreen() {
-        let regVC = RegistrationViewController()
+        let networkManager = NetworkManager()
+        let registrationViewModel = RegistrationViewModel(networkManeger: networkManager)
+        let regVC = RegistrationViewController(registrationViewModel: registrationViewModel)
         navigationController?.pushViewController(regVC, animated: true)
     }
 }

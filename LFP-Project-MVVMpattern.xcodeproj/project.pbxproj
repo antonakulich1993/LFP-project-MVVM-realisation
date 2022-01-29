@@ -11,6 +11,7 @@
 		FA028925279AAAF800F6489F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA028924279AAAF800F6489F /* AppDelegate.swift */; };
 		FA02892E279AAAFA00F6489F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA02892D279AAAFA00F6489F /* Assets.xcassets */; };
 		FA028931279AAAFA00F6489F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA02892F279AAAFA00F6489F /* LaunchScreen.storyboard */; };
+		FA97C0AD27A55F210027D4B6 /* LoginViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97C0AC27A55F210027D4B6 /* LoginViewModelType.swift */; };
 		FAA4E23A279EE52B00BC0196 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4E239279EE52B00BC0196 /* LoginViewController.swift */; };
 		FAA4E23E279EE55200BC0196 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4E23D279EE55200BC0196 /* RegistrationViewController.swift */; };
 		FAA4E240279EE65F00BC0196 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4E23F279EE65F00BC0196 /* LoginViewModel.swift */; };
@@ -31,6 +32,7 @@
 		FA02892D279AAAFA00F6489F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA028930279AAAFA00F6489F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA028932279AAAFA00F6489F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA97C0AC27A55F210027D4B6 /* LoginViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelType.swift; sourceTree = "<group>"; };
 		FAA4E239279EE52B00BC0196 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FAA4E23D279EE55200BC0196 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		FAA4E23F279EE65F00BC0196 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -92,12 +94,13 @@
 		FA028923279AAAF800F6489F /* LFP-Project-MVVMpattern */ = {
 			isa = PBXGroup;
 			children = (
-				FAA4E238279EE50B00BC0196 /* LoginViewController+RegistrationViewController */,
+				FA97C0AE27A561E70027D4B6 /* View */,
+				FA97C0AF27A561F10027D4B6 /* ViewModel */,
+				FA97C0AB27A55F0B0027D4B6 /* Protocols */,
+				FA97C0B027A562110027D4B6 /* Models */,
 				FAA4E243279EF28E00BC0196 /* CastomUIObjects */,
-				FA028924279AAAF800F6489F /* AppDelegate.swift */,
 				FAA4E24D279EFA3D00BC0196 /* DefaultsManager */,
-				FAA4E254279F1DB300BC0196 /* NetworkManager */,
-				FAA4E24A279EF99E00BC0196 /* NetworkModels */,
+				FA028924279AAAF800F6489F /* AppDelegate.swift */,
 				FA02892D279AAAFA00F6489F /* Assets.xcassets */,
 				FA02892F279AAAFA00F6489F /* LaunchScreen.storyboard */,
 				FA028932279AAAFA00F6489F /* Info.plist */,
@@ -105,31 +108,39 @@
 			path = "LFP-Project-MVVMpattern";
 			sourceTree = "<group>";
 		};
-		FAA4E238279EE50B00BC0196 /* LoginViewController+RegistrationViewController */ = {
+		FA97C0AB27A55F0B0027D4B6 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				FAA4E23B279EE53200BC0196 /* LoginViewController */,
-				FAA4E23C279EE53C00BC0196 /* RegistrationViewController */,
+				FA97C0AC27A55F210027D4B6 /* LoginViewModelType.swift */,
 			);
-			path = "LoginViewController+RegistrationViewController";
+			path = Protocols;
 			sourceTree = "<group>";
 		};
-		FAA4E23B279EE53200BC0196 /* LoginViewController */ = {
+		FA97C0AE27A561E70027D4B6 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				FAA4E239279EE52B00BC0196 /* LoginViewController.swift */,
-				FAA4E23F279EE65F00BC0196 /* LoginViewModel.swift */,
+				FAA4E23D279EE55200BC0196 /* RegistrationViewController.swift */,
 			);
-			path = LoginViewController;
+			path = View;
 			sourceTree = "<group>";
 		};
-		FAA4E23C279EE53C00BC0196 /* RegistrationViewController */ = {
+		FA97C0AF27A561F10027D4B6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				FAA4E23D279EE55200BC0196 /* RegistrationViewController.swift */,
 				FAA4E250279F1AE400BC0196 /* RegistrationViewModel.swift */,
+				FAA4E23F279EE65F00BC0196 /* LoginViewModel.swift */,
 			);
-			path = RegistrationViewController;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA97C0B027A562110027D4B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAA4E254279F1DB300BC0196 /* NetworkManagerModel */,
+				FAA4E24A279EF99E00BC0196 /* NetworkModels */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		FAA4E243279EF28E00BC0196 /* CastomUIObjects */ = {
@@ -157,12 +168,12 @@
 			path = DefaultsManager;
 			sourceTree = "<group>";
 		};
-		FAA4E254279F1DB300BC0196 /* NetworkManager */ = {
+		FAA4E254279F1DB300BC0196 /* NetworkManagerModel */ = {
 			isa = PBXGroup;
 			children = (
 				FAA4E252279F1DA800BC0196 /* NetworkManager.swift */,
 			);
-			path = NetworkManager;
+			path = NetworkManagerModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 				FAA4E24F279EFA6700BC0196 /* DeafaultsManager.swift in Sources */,
 				FAA4E247279EF2B400BC0196 /* LightBlueTextField.swift in Sources */,
 				FA028925279AAAF800F6489F /* AppDelegate.swift in Sources */,
+				FA97C0AD27A55F210027D4B6 /* LoginViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
